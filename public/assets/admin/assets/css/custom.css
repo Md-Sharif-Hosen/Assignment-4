@@ -1,0 +1,29 @@
+.table_wrapper{
+    height: 380px;
+    padding-right: 10px;
+}
+.table_wrapper .table{
+    text-align: center;
+}
+.table_wrapper .table thead tr th:last-child{
+    text-align: right;
+    padding-right: 32px;
+    width: 150px;
+}
+.page-content{
+    padding-bottom: 0px;
+}
+.table_action{
+    text-align: right;
+}
+.table_action ul li{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    display: inline-flex;
+    gap: 10px;
+}
+.table_action ul li a{
+    display: grid;
+    padding: 7px;
+}
