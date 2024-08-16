@@ -141,5 +141,5 @@
         </div>
     </div>
 
-    {{ $all_contact->links() }}
+    {{-- {{ $all_contact->links() }} --}}
 @endsection

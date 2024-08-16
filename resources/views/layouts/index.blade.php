@@ -22,7 +22,7 @@
 
 
 <div class="main-content">
-    <div class="container" style="margin-top: 20px">
+    <div class="container" style="margin-top: px">
         @yield('content')
     </div>
 

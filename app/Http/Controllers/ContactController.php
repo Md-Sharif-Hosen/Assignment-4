@@ -29,7 +29,8 @@ class ContactController extends Controller
             $query->orderBy('created_at', 'desc');
         }
 
-        $all_contact=$query->paginate(5);
+        // $all_contact=$query->paginate(5);
+        $all_contact=$query->get();
 
         $noResults = $all_contact->isEmpty();
         // dd($all_contact->toArray());
