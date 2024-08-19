@@ -40,11 +40,48 @@
                 Sort by
             </button>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item"
+                {{-- <li><a class="dropdown-item"
                         href="?sort_by=name&order={{ request('order') == 'asc' ? 'desc' : 'asc' }}">Name</a></li>
                 <li><a class="dropdown-item"
                         href="?sort_by=created_at&order={{ request('order') == 'asc' ? 'desc' : 'asc' }}">Created At</a>
-                </li>
+                </li> --}}
+
+                <li>
+    <a class="dropdown-item"
+       href="?sort_by=name&order=asc">
+       Name Ascending
+       @if(request('sort_by') == 'name' && request('order') == 'asc')
+           <i class="fa fa-check"></i>
+       @endif
+    </a>
+</li>
+<li>
+    <a class="dropdown-item"
+       href="?sort_by=name&order=desc">
+       Name Descending
+       @if(request('sort_by') == 'name' && request('order') == 'desc')
+           <i class="fa fa-check"></i>
+       @endif
+    </a>
+</li>
+<li>
+    <a class="dropdown-item"
+       href="?sort_by=created_at&order=asc">
+       Created At Ascending
+       @if(request('sort_by') == 'created_at' && request('order') == 'asc')
+           <i class="fa fa-check"></i>
+       @endif
+    </a>
+</li>
+<li>
+    <a class="dropdown-item"
+       href="?sort_by=created_at&order=desc">
+       Created At Descending
+       @if(request('sort_by') == 'created_at' && request('order') == 'desc')
+           <i class="fa fa-check"></i>
+       @endif
+    </a>
+</li>
 
             </ul>
         </div>
